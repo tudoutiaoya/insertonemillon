@@ -1,0 +1,17 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: insertonemillon
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.143.224.79:3306/demo?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.zzqedu.domain
+  mapper-locations: classpath:mapper/*xml
